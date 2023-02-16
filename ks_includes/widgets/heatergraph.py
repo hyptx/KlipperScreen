@@ -154,7 +154,7 @@ class HeaterGraph(Gtk.DrawingArea):
             ctx.set_font_size(self.font_size)
             ctx.show_text(str(nscale * i).rjust(3, " "))
             ctx.stroke()
-            ctx.set_source_rgba(165,62,255,.5)
+            ctx.set_source_rgba(165,62,255,1)
             ctx.move_to(gsize[0][0], lheight)
             ctx.line_to(gsize[1][0], lheight)
             ctx.stroke()
@@ -171,7 +171,7 @@ class HeaterGraph(Gtk.DrawingArea):
             x = first - i * steplen
             if x < gsize[0][0]:
                 break
-            ctx.set_source_rgba(165,62,255,.5)
+            ctx.set_source_rgba(209,157,255,1)
             ctx.move_to(x, gsize[0][1])
             ctx.line_to(x, gsize[1][1])
             ctx.stroke()
