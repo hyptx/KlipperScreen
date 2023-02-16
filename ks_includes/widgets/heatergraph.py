@@ -148,7 +148,7 @@ class HeaterGraph(Gtk.DrawingArea):
         hscale = (gsize[1][1] - gsize[0][1]) / (r * nscale)
 
         for i in range(r):
-            ctx.set_source_rgb(.5, .5, .5)
+            ctx.set_source_rgb(165,62,255,1)
             lheight = gsize[1][1] - nscale * i * hscale
             ctx.move_to(6, lheight + 3)
             ctx.set_font_size(self.font_size)
@@ -176,7 +176,7 @@ class HeaterGraph(Gtk.DrawingArea):
             ctx.line_to(x, gsize[1][1])
             ctx.stroke()
 
-            ctx.set_source_rgb(.5, .5, .5)
+            ctx.set_source_rgb(209,157,255)
             ctx.move_to(x - round(self.font_size * 1.5), gsize[1][1] + round(self.font_size * 1.5))
 
             h = now.hour
