@@ -148,7 +148,7 @@ class HeaterGraph(Gtk.DrawingArea):
         hscale = (gsize[1][1] - gsize[0][1]) / (r * nscale)
 
         for i in range(r):
-            ctx.set_source_rgb(165,62,255,1)
+            ctx.set_source_rgb(165,62,255)
             lheight = gsize[1][1] - nscale * i * hscale
             ctx.move_to(6, lheight + 3)
             ctx.set_font_size(self.font_size)
